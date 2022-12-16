@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chakma&family=Orbitron:wght@500&family=Passions+Conflict&display=swap');
+body{
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.loginMain{
+    width: 100vw;  /* viewport = porcentagem de largura de tela*/
+    height: 100vh; /* viewport = porcentagem de altura de tela*/
+    background-color: #011d58;
+    display: flex;
+    justify-content: center; /* alinhar elementos no eixo x*/
+    align-items: center;  /* alinhar elementos no eixo y*/
+}
+
+.loginLeft{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* alinhar elementos no eixo x*/
+    align-items: center;  /* alinhar elementos no eixo y*/
+    flex-direction:column;
+}
+
+.loginLeft > h1 {
+    color: #0ebdbd;
+}
+
+.imagem{
+    width: 35vw;
+}
+
+.loginRight{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* alinhar elementos no eixo x*/
+    align-items: center;  /* alinhar elementos no eixo y*/
+}
+
+.loginCard{
+    width: 60%;
+    display: flex;
+    justify-content: center; /* alinhar elementos no eixo x*/
+    align-items: center;  /* alinhar elementos no eixo y*/
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #0ebdbd;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #41ca68;
+}
+
+.loginCard > h1{
+    color:#ebf8ef;
+    font-weight: 800;
+    margin: 0;
+}
+
+.loginText{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin:10px 0px;
+}
+
+.loginText > input{
+    width: 100%;
+    border:none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #76fafa;
+    color:#0f2b18;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #478a5b;
+    outline: none;
+    box-sizing: border-box;
+    font-family:'Orbitron', sans-serif;
+}
+
+.loginText > label{
+    color: rgb(11, 80, 112);
+    margin-bottom: 10px;
+}
+
+.loginText > input::placeholder{
+    color: #0b4b1e;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.loginButton{
+    width: 100%;
+    padding: 16px 0px;
+    margin:25px;
+    border: none;
+    border-radius:8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #7ddb9a;
+    background-color: navy;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #19c9a3;
+}
+
+@media only screen and (max-width: 950px){
+    .loginCard{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .loginMain{
+        flex-direction: column;
+    }
+    .loginLeft > h1{
+        display: none;
+    }
+    .loginLeft{
+        width: 100%;
+        height: auto;
+    }
+    .loginRight{
+        width: 100%;
+        height: auto;
+    }
+    .imagem{
+        width: 90vw;
+        height: 30vh;
+    }
+    .loginCard{
+        width: 90%;
+    }
+}
